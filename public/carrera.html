@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detalles de la carrera</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <button onclick="location.href='index.html'">🏠 Inicio</button>
+    <button onclick="location.href='participante.html'">🎽 Participante</button>
+    <button onclick="location.href='admin.html'">🏁 Administrador</button>
+  </nav>
+
+  <header>
+    <h1 id="titulo">Detalle de la carrera</h1>
+    <p id="fecha" style="font-weight:600"></p>
+  </header>
+
+  <main>
+    <section id="detalle" class="card">
+      <!-- imagen y descripcion se inyectan desde script.js -->
+    </section>
+
+    <section id="formulario" class="card">
+      <h2>Formulario de inscripción</h2>
+      <form id="formInscripcion">
+        <label>Nombre <input name="nombre" placeholder="Nombre" required></label>
+        <label>Apellidos <input name="apellidos" placeholder="Apellidos" required></label>
+        <label>DNI <input name="dni" placeholder="DNI" required></label>
+        <label>Teléfono <input name="telefono" placeholder="Teléfono" required></label>
+        <label>Ciudad <input id="ciudadInput" name="ciudad" readonly></label>
+        <label>Contraseña <input name="password" type="password" placeholder="Contraseña" required></label>
+        <button type="submit">Enviar inscripción</button>
+      </form>
+      <div id="confirmacion" class="hidden"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto Ironhack — Carreras Populares</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

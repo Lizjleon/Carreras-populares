@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panel del Administrador - Carreras</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="admin-page">
+  <nav class="sidebar">
+    <button onclick="location.href='index.html'">🏠 Inicio</button>
+    <button onclick="location.href='participante.html'">🎽 Participante</button>
+    <button onclick="location.href='admin.html'">🏁 Administrador</button>
+  </nav>
+
+  <header class="admin-header">
+    <h1>🔒 Panel del Administrador</h1>
+    <p>Acceso restringido — solo organizadores</p>
+  </header>
+
+  <main>
+    <section class="card" id="loginCard">
+      <h2>Iniciar sesión</h2>
+      <form id="adminLoginForm">
+        <input type="text" id="adminUser" placeholder="Usuario" required />
+        <input type="password" id="adminPass" placeholder="Contraseña" required />
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="adminLoginMsg" class="error-msg hidden"></p>
+    </section>
+
+    <section id="panelSection" class="hidden card">
+      <div style="text-align:center; margin-bottom:12px;">
+        <select id="filtro">
+          <option value="">Todas</option>
+          <option>Barcelona</option>
+          <option>Madrid</option>
+          <option>Alicante</option>
+          <option>Sevilla</option>
+          <option>Galicia</option>
+          <option>Valencia</option>  
+        </select>
+        <button id="cargar">Cargar lista</button>
+      </div>
+
+      <h2>Participantes</h2>
+      <ul id="lista"></ul>
+    </section>
+  </main>
+
+  <footer style="text-align:center;"><a href="index.html">← Volver</a></footer>
+  <p>Proyecto Ironhack — Carreras Populares 2026</p>
+  <script src="admin.js"></script>
+</body>
+</html>

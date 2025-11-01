@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carreras Populares 2026</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+  <script src="carreras.js" defer></script>
+</head>
+
+<body>
+  <!-- ==== NAV ==== -->
+  <nav class="navbar">
+    <button onclick="window.location.href='index.html'">🏠 Inicio</button>
+    <button onclick="window.location.href='participante.html'">🏃‍♂️ Participante</button>
+    <button onclick="window.location.href='admin.html'">⚙️ Administrador</button>
+  </nav>
+
+  <div class="spacer"></div>
+
+  <!-- ==== HEADER ==== -->
+  <header>
+    <h1>Carreras Populares 2026</h1>
+    <p>¡Participa en las carreras de toda España!</p>
+  </header>
+
+  <!-- ==== CONTENIDO PRINCIPAL ==== -->
+<main>
+  <div class="main-layout">
+    <!-- 🏃‍♂️ CARRERAS -->
+    <section class="selector-carreras">
+      <h2>Próximas carreras</h2>
+      <div class="grid-carreras" id="carrerasContainer">
+        <!-- Tarjetas generadas dinámicamente -->
+      </div>
+    </section>
+
+    <!-- 🌍 TURISMO -->
+    <section class="turismo-section">
+      <h2>🌍 Información Turística de las Ciudades</h2>
+      <div class="info-links">
+        <a href="https://www.barcelonaturisme.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Sagrada_Familia_01.jpg" alt="Turismo Barcelona">
+        
+        </a>
+        <a href="https://www.esmadrid.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Madrid_Gran_Via.jpg" alt="Turismo Madrid">
+        
+        </a>
+        <a href="https://www.visitalicante.es" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Alicante_Beach.jpg" alt="Turismo Alicante">
+    
+        </a>
+        <a href="https://www.visitasevilla.es" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Plaza_de_Espa%C3%B1a_Sevilla.jpg" alt="Turismo Sevilla">
+       
+        </a>
+        <a href="https://www.turismo.gal" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Santiago_de_Compostela.jpg" alt="Turismo Galicia">
+       
+        </a>
+        <a href="https://www.visitvalencia.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Valencia_Ciudad_de_las_Artes.jpg" alt="Turismo Valencia">
+         
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto Ironhack — Carreras Populares 2026</p>
+  </footer>
+</body>
+</html>

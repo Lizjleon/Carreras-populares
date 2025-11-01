@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Área del Participante - Carreras Populares</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <body class="participante-page"></body>
+  <nav class="sidebar">
+    <button onclick="location.href='index.html'">🏠 Inicio</button>
+    <button onclick="location.href='participante.html'">🎽 Participante</button>
+    <button onclick="location.href='admin.html'">🏁 Administrador</button>
+  </nav>
+
+  <header>
+    <h1>Área del Participante</h1>
+    <p>Accede para ver y personalizar tu dorsal</p>
+  </header>
+
+  <main>
+    <section id="loginSection" class="card">
+      <h2>Iniciar sesión</h2>
+      <form id="loginForm">
+        <input type="text" id="dniLogin" placeholder="DNI" required />
+        <input type="password" id="passLogin" placeholder="Contraseña" required />
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="loginError" class="error-msg hidden"></p>
+    </section>
+
+    <section id="perfilSection" class="card hidden">
+      <h2>Tu dorsal</h2>
+      <div id="dorsalPreviewContainer">
+        <div id="dorsalPreview">
+          <p id="nombrePreview"></p>
+          <p id="numeroPreview"></p>
+        </div>
+      </div>
+
+      <h3>Personaliza tu dorsal</h3>
+      <form id="perfilForm">
+        <label>Teléfono <input type="text" name="telefono" /></label>
+        <label>Ciudad
+          <select name="ciudad">
+            <option value="">Selecciona</option>
+            <option>Barcelona</option>
+            <option>Madrid</option>
+            <option>Alicante</option>
+            <option>Sevilla</option>
+            <option>Galicia</option>
+            <option>Valencia</option>
+          </select>
+        </label>
+        <label>Color <input type="color" id="colorInput" value="#7b5cff" /></label>
+        <label>Fuente
+          <select id="fuenteSelect">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+          </select>
+        </label>
+        <button type="submit">Guardar cambios</button>
+      </form>
+
+      <p id="mensaje" class="success-msg hidden"></p>
+    </section>
+  </main>
+
+  <footer>
+  <footer class="participante-page footer"></footer>
+    <p>Proyecto Ironhack — Carreras Populares 2026</p>
+  </footer>
+
+  <script src="participante.js"></script>
+</body>
+</html>
